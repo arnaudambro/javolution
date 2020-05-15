@@ -23,15 +23,22 @@ class Signup extends React.Component {
   async handleSubmit(e) {
     e.preventDefault();
     // console.log('handleSubmit', this.state)
+    const formData = new FormData();
+    formData.append('nom', this.state.name);
+    formData.append('email', this.state.email_address);
+    formData.append('blog', 'javolution');
+
     const res = await fetch('https://formcarry.com/s/GRumZEwsY0G', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'multipart/form-data',
       },
-      body: JSON.stringify(this.state),
+      body: formData,
     });
     console.log(res);
+    if (res.ok) {
+      window.location.href = window.location.origin + '/thanks';
+    }
   }
 
   render() {

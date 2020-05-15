@@ -19,6 +19,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        RewriteBase: '/',
+        https: true,
+        www: true,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
