@@ -237,6 +237,43 @@ pre[data-line] {
   overflow: auto;
 }
 
+.tag {
+  height: 30px;
+  border-radius: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid var(--textNormal);
+  /* font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace; */
+  font-family: Montserrat, sans-serif;
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  color: var(--textNormal);
+}
+.tag.selected {
+  background-color: var(--textLink);
+  color: var(--bg-secondary);
+}
+
+.prez {
+  transition: opacity 400ms ease 0ms;
+  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+  height: 100%;
+  width: 100%;
+  max-width: 1410px;
+  max-height: 400px;
+  height: 400px;
+  object-fit: contain;
+  border: 1px solid #000;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 672px) {
   .gatsby-highlight {
     border-radius: 0;

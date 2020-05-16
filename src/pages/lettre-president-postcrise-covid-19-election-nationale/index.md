@@ -2,7 +2,8 @@
 title: Lettre ouverte au Président de la République
 date: '2020-05-15'
 spoiler: Ce qu'il devrait faire une fois la crise du COVID-19 dernière nous ? Une élection nationale pour nous laisser choisir le monde d'après.
-cta: 'react'
+cta: 'Révolution'
+tags: 'Révolution'
 ---
 <font size=2>
 Lettre publique au Président de la République, envoyée par courrier <i>gratuitement</i> (pas besoin de timbre) à l'Élysée (55 Rue du Faubourg Saint-Honoré - 75008 Paris)

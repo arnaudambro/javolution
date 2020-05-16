@@ -26,7 +26,7 @@ class Signup extends React.Component {
     const formData = new FormData();
     formData.append('nom', this.state.name);
     formData.append('email', this.state.email_address);
-    formData.append('blog', 'javolution');
+    formData.append('blog', 'javolution ' + this.props.cta);
 
     const res = await fetch('https://formcarry.com/s/GRumZEwsY0G', {
       method: 'POST',
@@ -35,7 +35,6 @@ class Signup extends React.Component {
       },
       body: formData,
     });
-    console.log(res);
     if (res.ok) {
       window.location.href = window.location.origin + '/thanks';
     }
@@ -45,22 +44,36 @@ class Signup extends React.Component {
     let form,
       { cta } = this.props;
     switch (cta) {
-      // case 'react':
-      //   form = {
-      //     id: REACT_COMPONENTS_FORM_ID,
-      //     title: 'Learn to Build Resilient React Components',
-      //     subTitle:
-      //       'Get a one week email course and learn how I think about writing React components based on 4 Principles.',
-      //     buttonText: 'Start Learning',
-      //   };
-      // break;
+      case 'JavaScript':
+        form = {
+          id: JAVOLUTION_FORM_ID,
+          title: 'Subscribe to the Newsletter',
+          subTitle: 'Subscribe to get my latest content by email.',
+          buttonText: 'Subscribe',
+          nameLabel: 'Your name',
+          emailLabel: 'Your email',
+          blog: 'Javolution - JavaScript',
+          noSpam: {
+            1: "I won't spam you.",
+            2: 'Unsubscribe any time.',
+          },
+        };
+        break;
+      case 'Révolution':
       default:
         form = {
           id: JAVOLUTION_FORM_ID,
           title: 'Abonnez-vous',
           subTitle:
-            'Abbonez-vous pour recevoir mes derniers articles par mail.',
+            'Abonnez-vous pour recevoir mes derniers articles par mail.',
           buttonText: 'Abonnez-vous',
+          nameLabel: 'Votre nom',
+          emailLabel: 'Votre email',
+          blog: 'Javolution - Révolution',
+          noSpam: {
+            1: 'Je ne vous enverrai pas de spam.',
+            2: 'Désabonnez-vous quand vous voulez.',
+          },
         };
     }
     return (
@@ -144,11 +157,11 @@ class Signup extends React.Component {
               <div className="formkit-field">
                 <input
                   className="formkit-input"
-                  aria-label="Votre nom"
+                  aria-label={form.nameLabel}
                   name="name"
                   value={this.state.name}
                   onChange={this.handleChange}
-                  placeholder="Votre nom"
+                  placeholder={form.nameLabel}
                   type="text"
                   style={{
                     borderColor: 'rgb(227, 227, 227)',
@@ -164,7 +177,7 @@ class Signup extends React.Component {
                   className="formkit-input"
                   aria-label="Blog"
                   name="fields[blog]"
-                  value="Javolution"
+                  value={form.blog}
                   type="text"
                   readOnly
                   style={{
@@ -179,8 +192,8 @@ class Signup extends React.Component {
                   name="email_address"
                   value={this.state.email_address}
                   onChange={this.handleChange}
-                  aria-label="Votre email"
-                  placeholder="Votre email"
+                  aria-label={form.emailLabel}
+                  placeholder={form.emailLabel}
                   required
                   type="email"
                   style={{
@@ -214,10 +227,8 @@ class Signup extends React.Component {
                 fontWeight: 400,
               }}
             >
-              <p>Je ne vous enverrai pas de spam.</p>
-              <p>
-                Désabonnez-vous <em>quand vous voulez</em>.
-              </p>
+              <p>{form.noSpam['1']}</p>
+              <p>{form.noSpam['2']}</p>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ module.exports = {
     author: 'Arnaud Ambroselli',
     description:
       'Personal blog by Arnaud Ambroselli, with some JavaScript, some politics, and sometimes both.',
-    siteUrl: 'https://javascript.io',
+    siteUrl: 'https://javolution.io',
     social: {
       twitter: '@arnaudambro',
     },
@@ -98,6 +98,7 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.spoiler,
                   date: edge.node.frontmatter.date,
+                  tags: edge.node.frontmatter.tags,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': html + postText }],
@@ -122,6 +123,7 @@ module.exports = {
                         title
                         date
                         spoiler
+                        tags
                       }
                     }
                   }
