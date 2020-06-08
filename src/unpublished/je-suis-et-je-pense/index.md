@@ -34,4 +34,4 @@ tags: 'Révolution'
 - Je crois en la responsabilisation de la population, c'est le cercle vertueux de l'éducation : quand on est éduqué, on sait réfléchir, et sait choisir et voter en responsabilité, et on veut choisir plus. Mix de valeurs de droites et de gauche : notre société est responsable, valeur de droite, il lui faut donc plus de démocratie pour exercer sa responsabilité, valeur de gauche.
 - Je suis d'éducation catholique, mais athée de convictions.
 
-À suivre...
+Bio pas finie, à suivre, compléter, mettre-à-jour, supprimer, etc.
