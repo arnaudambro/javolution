@@ -33,6 +33,7 @@
 .formkit-form .formkit-select,
 .formkit-form .formkit-checkboxes {
   width: 100%;
+  resize: none;
 }
 .formkit-form .formkit-button,
 .formkit-form .formkit-submit {

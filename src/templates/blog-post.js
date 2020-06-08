@@ -97,13 +97,17 @@ class BlogPostTemplate extends React.Component {
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <footer>
-              <p>
-                <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                  {post.frontmatter.tags === 'JavaScript'
-                    ? 'Discuss on Twitter'
-                    : 'Discutez-en sur Twitter'}
-                </a>
-              </p>
+              {post.frontmatter.tags === 'JavaScript' && (
+                <p>
+                  <a
+                    href={discussUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Discuss on Twitter
+                  </a>
+                </p>
+              )}
             </footer>
           </article>
         </main>

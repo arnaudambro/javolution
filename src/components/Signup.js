@@ -13,6 +13,7 @@ class Signup extends React.Component {
       name: '',
       email_address: '',
       from: 'javolution',
+      comment: '',
     };
   }
 
@@ -52,6 +53,7 @@ class Signup extends React.Component {
           buttonText: 'Subscribe',
           nameLabel: 'Your name',
           emailLabel: 'Your email',
+          commentLabel: 'A comment ?',
           blog: 'Javolution - JavaScript',
           noSpam: {
             1: "I won't spam you.",
@@ -69,6 +71,7 @@ class Signup extends React.Component {
           buttonText: 'Abonnez-vous',
           nameLabel: 'Votre nom',
           emailLabel: 'Votre email',
+          commentLabel: 'Un commentaire ?',
           blog: 'Javolution - Révolution',
           noSpam: {
             1: 'Je ne vous enverrai pas de spam.',
@@ -194,6 +197,25 @@ class Signup extends React.Component {
                   onChange={this.handleChange}
                   aria-label={form.emailLabel}
                   placeholder={form.emailLabel}
+                  required
+                  type="email"
+                  style={{
+                    borderColor: 'rgb(227, 227, 227)',
+                    borderRadius: '4px',
+                    color: 'rgb(0, 0, 0)',
+                    fontWeight: 400,
+                  }}
+                />
+              </div>
+              <div className="formkit-field">
+                <textarea
+                  className="formkit-input"
+                  name="email_address"
+                  rows={3}
+                  value={this.state.comment}
+                  onChange={this.handleChange}
+                  aria-label={form.commentLabel}
+                  placeholder={form.commentLabel}
                   required
                   type="email"
                   style={{
