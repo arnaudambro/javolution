@@ -210,14 +210,13 @@ class Signup extends React.Component {
               <div className="formkit-field">
                 <textarea
                   className="formkit-input"
-                  name="email_address"
+                  name="comment"
                   rows={3}
                   value={this.state.comment}
                   onChange={this.handleChange}
                   aria-label={form.commentLabel}
                   placeholder={form.commentLabel}
-                  required
-                  type="email"
+                  type="text"
                   style={{
                     borderColor: 'rgb(227, 227, 227)',
                     borderRadius: '4px',
