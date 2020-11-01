@@ -2,14 +2,13 @@
 title: 'Pour sortir de ce merdier, soyons responsables, tous !'
 date: '2020-10-31'
 spoiler: La pandémie, le terrorisme, la crise... un sacré foutoir !
-cover: ./allan-barte-gilets-jaunes.png
 cta: 'Révolution'
 tags: 'Révolution'
 ---
 
 Ça y est, on reconfine. Le virus contaminer trop de gens. Il y a trop de venues en services de réanimation, qui sont incapables de prendre tout le monde en charge. Et donc on se confine, pour ralentir au maximum la propagation du virus, éviter d'avoir trop de contaminés à l'hôpital, et éviter ainsi au médecin de trop devoir choisir qui doit vivre, et qui doit mourir. Mais est-ce que ce second confinement est une bonne chose, au fond ?
 
-# Le médecin n'a pas droit de vie ou de mort, mais pouvoir de sauver
+## Le médecin n'a pas droit de vie ou de mort, mais pouvoir de sauver
 
 Commençons par rectifier notre introduction : le choix du médecin n'est pas qui *doit vivre* contre qui *doit mourir*, mais qui va-t-il *pouvoir sauver* entre tous ceux qui arrivent dans son hôpital. En comparaison, le maître nageur, seul sur sa plage devant deux ou trois personnes qui se noient en même temps, est confronté au même choix. Il pourra toujours se reprocher de ne pas avoir été avec un collègue pour l'aider, mais il pourra surtout se féliciter d'avoir sauvé quelqu'un.
 
