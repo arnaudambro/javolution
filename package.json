@@ -55,7 +55,8 @@
     "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "build": "rm -rf public && rm -rf .cache && gatsby build && node ./upload.sh",
+    "upload": "./upload.sh",
     "now-build": "gatsby build",
     "js-to-jsx": "node src/utils/js-to-jsx"
   },
