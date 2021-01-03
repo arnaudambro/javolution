@@ -7,18 +7,17 @@ cta: 'Révolution'
 tags: 'Révolution'
 ---
 
-
-Je ne suis pas anti-vaccin : mon fils de dix-huit mois est vacciné de tous les vaccins possibles, et je ne sais même pas lesquels puisqu'il est vacciné en néerlandais et je n'ai pas prix la peine ni de lire, ni de traduire les vaccins qu'on lui administre. Pas très malin...
+Je ne suis pas anti-vaccin : mon fils de dix-huit mois est vacciné de tous les vaccins possibles. Je ne sais d'ailleurs même pas de quels vaccins on parle puisqu'il est vacciné en néerlandais et je n'ai pas prix la peine ni de lire, ni de traduire les vaccins qu'on lui administre. Pas très malin...
 
 Alors pourquoi, me demandez-vous, ne voudrais-je pas me faire vacciner contre cette COVID-19 ?
 
 # Mortalité de ma classe d'âge trop faible
 
-Déjà, il n'y a pas beaucoup de morts de la COVID. Rapportez le chiffre de 40 000 morts, paix à leurs âmes, aux 70 millions d'habitants, ce n'est pas grand chose. 
+Déjà, il n'y a pas d'hécatombe à cause de la COVID. En France, 30 000 la première vague, 30 000 la seconde, ça fait environ 1 mort sur 2000 pour chaque vague, 1 mort sur 1000 pour l'ensemble de son oeuvre,
 
-Ensuite, dans ma classe d'âge, il y a encore moins de mort. À peu près 400 morts pour la tranche d'âge 1-45 ans, c'est insignifiant.
+Ensuite, dans ma classe d'âge, il y a encore moins de mort. À peu près 400 morts pour la tranche d'âge 1-45 ans, c'est presque insignifiant.
 
-Donc le risque d'avoir un problème de santé à cause de ce COVID est tellement faible que je n'ai pas envie de m'en protéger.
+Donc le risque d'avoir un problème de santé grave à cause de ce COVID est tellement faible que je n'ai pas envie de m'en protéger.
 
 En revanche, si nous sommes tous confinés aujourd'hui pour éviter de refiler le virus à la classe d'âge supérieure, qui est sensible, elle, à ce virus au point de devoir s'en faire soigner à l'hôpital, qu'ils soient vaccinés, bien sûr !
 
@@ -34,19 +33,16 @@ Les entreprises pharmaceutiques fournissent certes des produits qui nous guéris
 
 # Vacciner l'Afrique ???
 
-On parle ce matin de la problématique de comment financer la vaccination de l'Afrique... 
+Dominique Seux nous parle ce matin sur France Inter de la problématique de "comment financer la vaccination de l'Afrique"...
 
 ![Nombre de morts du COVID sur le globe](./carte-covid-monde.png)
 
-Mais l'Afrique s'en fout de ce vaccin ! Il s'attaque aux personnes de plus de 60 ans, et l'espérance de vie moyenne en Afrique est de 60 ans. Un vaccin contre Ebola, oui, mais pour ce COVID ? Ah, mais Ebola, ça ne touchait que l'Afrique, donc on ne met pas les bouchées doubles. Par contre, le COVID, ça touche chez nous, donc on va aller le vendre à l'Afrique !
+Mais l'Afrique s'en fout de ce vaccin ! Peut-être que les chiffres africains ne sont pas complets, mais cela n'empêche pas l'analyse : la COVID s'attaque surtout aux personnes de plus de 60 ans, et l'espérance de vie moyenne en Afrique _est_ de 60 ans. Elle s'attaque aussi aux personnes ayant des faiblesses, des comorbidités (obésité, problèmes cardio-vasculaires...), mais ces personnes existent beaucoup moins en Afrique, par exemple parce qu'il y a bien plus d'obèses en Europe et Amérique qu'en Afrique. Donc cela parait logique qu'il y ait moins d'impact de cette COVID en Afrique que chez nous.
 
+Un vaccin pour l'Afrique contre Ebola, oui, mais contre cette COVID ? Ah, mais Ebola, ça ne touchait que l'Afrique, donc on ne met pas les bouchées doubles. Par contre, la COVID, ça touche beaucoup chez nous, donc on va aller le vendre à l'Afrique !
 
 # Conclusion ?
 
-Sommes-nus devenus idiots ? 
-Perdons-nous la tête ? 
-Pourquoi ? 
+Perdons-nous la tête ? Pourquoi ?
 
 Pourquoi ???
-
-
