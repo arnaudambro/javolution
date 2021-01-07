@@ -1,14 +1,15 @@
 ---
 title: J'ai le coco !
-date: '2021-01-03'
+date: '2021-01-07'
 spoiler: C'est grave docteur ? Survol statistique de la chose
+cover: ./stats.png
 cta: 'Révolution'
 tags: 'Révolution'
 ---
 
-Depuis une petite semaine, j'ai le coco. On l'a attrapé en famille, on s'est testé en famille, on est resté plus ou moins confinés, toujours en famille. Depuis ce matin, je n'ai plus d'odorat : c'est sûr, ça se confirme bien, c'est le coco ! Pour l'instant la maladie est plutôt simple à vivre, touchons du bois.
+Depuis une dizaine de jours, j'ai le coco. On l'a attrapé en famille, on s'est testé en famille, on est resté plus ou moins confinés, toujours en famille. Depuis hier, l'odorat revient petit à petit, ça sent la fin ! Pour l'instant la maladie a été plutôt simple à vivre, touchons du bois.
 
-À vrai dire, si on regarde les statistiques, il y a peu de chances que ça s'empire. De manière générale, lorsque statistiques il y a, je préfère toujours me placer dans la statistique positive, et donc réagir au malheur lorsqu'il est là plutôt que de l'anticiper toujours et qu'il n'arrive jamais. Ce qu'il y a de bien avec les statistiques, c'est qu'on peut les prendre comme ça nous arrange : la statistique ne fait que refléter ce qu'il s'est passé, pas ce qui se passera, donc lorsqu'il s'agit de vouloir prévoir son futur en regardant les statistiques du passé, libre à nous de s'inclure dans la statistique qui nous plait.
+À vrai dire, si on regarde les statistiques, il y a(vait) peu de chances que ça s'empire, que j'aille à l'hôpital ou que j'en meure. Il y a des chances, oui, mais peu, très peu, trop peu pour m'inquiéter. De manière générale, lorsque statistiques il y a, je préfère toujours me placer dans la statistique positive, et donc réagir au malheur lorsqu'il est là plutôt que de l'anticiper toujours et qu'il n'arrive jamais. Ce qu'il y a de bien avec les statistiques, c'est qu'on peut les prendre comme ça nous arrange : la statistique ne fait que refléter ce qu'il s'est passé, pas ce qui se passera, donc lorsqu'il s'agit de vouloir prévoir son futur en regardant les statistiques du passé, libre à nous de s'inclure dans la statistique qui nous plait.
 
 Je vous présente donc un petit florilège de statistiques diverses et variées, pour remettre en perspective les stats du coronavirus.
 
