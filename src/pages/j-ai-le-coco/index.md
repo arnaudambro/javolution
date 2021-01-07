@@ -13,6 +13,8 @@ Depuis une dizaine de jours, j'ai le coco. On l'a attrapé en famille, on s'est 
 
 Je vous présente donc un petit florilège de statistiques diverses et variées, pour remettre en perspective les stats du coronavirus.
 
+![Stats de la COVID](./stats.png)
+
 # Résumé de statistiques de la COVID
 
 Pour rappel, quelques stats du coco (sources: [Google](https://www.google.com/search?client=safari&rls=en&q=statistiques+covid&ie=UTF-8&oe=UTF-8), [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/) et [franceinfo](https://www.francetvinfo.fr/sante/maladie/coronavirus/infographies-covid-19-morts-hospitalisations-age-malades-l-evolution-de-l-epidemie-en-france-et-dans-le-monde-en-cartes-et-graphiques.html)):
@@ -57,7 +59,7 @@ Parce qu'effectivement y'a pas beaucoup de raison de paniquer : il y a environ 8
 
 ### Grippe
 
-Préambule pour calmer les foules qui s'excitent déjà : la COVID est plus grave que la grippe, à n'en pas douter, de part les symptômes, la contagiosité, et la mortalité aussi, etc. Là n'est pas le propos, j'essaye juste de montrer des chiffres pour pouvoir mettre en perspective nos stats du COVID.
+Préambule pour calmer les foules qui s'excitent déjà : la COVID est plus grave que la grippe, à n'en pas douter, de part les symptômes, la contagiosité, et la mortalité aussi, etc. Là n'est pas le propos, j'essaye juste de montrer des chiffres pour pouvoir mettre en perspective nos stats du COVID. Je prends ceux de la grippe parce qu'ils sont facile d'accès et que, n'étant pas médecin, je ne connais pas non plus un million de maladies. Mais le COVID n'est pas une grippette, bien entendu.
 
 Citons donc [l'Institut Pasteur](https://www.pasteur.fr/fr/centre-medical/fiches-maladies/grippe) :
 
