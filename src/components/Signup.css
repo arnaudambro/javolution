@@ -150,10 +150,7 @@
 .formkit-form [data-group='checkboxes'] [data-group='checkbox']:last-of-type {
   margin-bottom: 0;
 }
-.formkit-form
-  [data-group='checkboxes']
-  [data-group='checkbox']
-  input[type='checkbox'] {
+.formkit-form [data-group='checkboxes'] [data-group='checkbox'] input[type='checkbox'] {
   display: none;
 }
 .formkit-form
@@ -260,10 +257,9 @@
   opacity: 0.3;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: formkit-bouncedelay-formkit-form-data-uid-4a352cb1fd- 1.4s
-    infinite ease-in-out both;
-  animation: formkit-bouncedelay-formkit-form-data-uid-4a352cb1fd- 1.4s infinite
-    ease-in-out both;
+  -webkit-animation: formkit-bouncedelay-formkit-form-data-uid-4a352cb1fd- 1.4s infinite ease-in-out
+    both;
+  animation: formkit-bouncedelay-formkit-form-data-uid-4a352cb1fd- 1.4s infinite ease-in-out both;
 }
 .formkit-form .formkit-spinner > div:nth-child(1) {
   -webkit-animation-delay: -0.32s;

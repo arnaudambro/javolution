@@ -147,9 +147,7 @@ export default class Toggle extends PureComponent {
     if (!icons) {
       return null;
     }
-    return icons[type] === undefined
-      ? Toggle.defaultProps.icons[type]
-      : icons[type];
+    return icons[type] === undefined ? Toggle.defaultProps.icons[type] : icons[type];
   }
 
   render() {
@@ -167,15 +165,10 @@ export default class Toggle extends PureComponent {
         onTouchStart={this.handleTouchStart}
         onTouchMove={this.handleTouchMove}
         onTouchEnd={this.handleTouchEnd}
-        onTouchCancel={this.handleTouchCancel}
-      >
+        onTouchCancel={this.handleTouchCancel}>
         <div className="react-toggle-track">
-          <div className="react-toggle-track-check">
-            {this.getIcon('checked')}
-          </div>
-          <div className="react-toggle-track-x">
-            {this.getIcon('unchecked')}
-          </div>
+          <div className="react-toggle-track-check">{this.getIcon('checked')}</div>
+          <div className="react-toggle-track-x">{this.getIcon('unchecked')}</div>
         </div>
         <div className="react-toggle-thumb" />
 

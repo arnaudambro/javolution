@@ -28,16 +28,14 @@ class Layout extends React.Component {
             ...scale(0.75),
             marginBottom: 0,
             marginTop: 0,
-          }}
-        >
+          }}>
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'var(--textTitle)',
             }}
-            to={'/'}
-          >
+            to={'/'}>
             {title}
           </Link>
         </h1>
@@ -51,16 +49,14 @@ class Layout extends React.Component {
             marginBottom: 0,
             height: 42, // because
             lineHeight: '2.625rem',
-          }}
-        >
+          }}>
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'rgb(255, 167, 196)',
             }}
-            to={'/'}
-          >
+            to={'/'}>
             {title}
           </Link>
         </h3>
@@ -77,8 +73,7 @@ class Layout extends React.Component {
           background: 'var(--bg)',
           transition: 'color 0.2s ease-out, background 0.2s ease-out',
           minHeight: '100vh',
-        }}
-      >
+        }}>
         <Helmet
           meta={[
             {
@@ -93,16 +88,14 @@ class Layout extends React.Component {
             marginRight: 'auto',
             maxWidth: rhythm(24),
             padding: `2.625rem ${rhythm(3 / 4)}`,
-          }}
-        >
+          }}>
           <header
             style={{
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
               marginBottom: '2.625rem',
-            }}
-          >
+            }}>
             {this.renderHeader()}
             {this.state.theme !== null ? (
               <Toggle
@@ -127,11 +120,7 @@ class Layout extends React.Component {
                   ),
                 }}
                 checked={this.state.theme === 'dark'}
-                onChange={e =>
-                  window.__setPreferredTheme(
-                    e.target.checked ? 'dark' : 'light'
-                  )
-                }
+                onChange={e => window.__setPreferredTheme(e.target.checked ? 'dark' : 'light')}
               />
             ) : (
               <div style={{ height: '24px' }} />

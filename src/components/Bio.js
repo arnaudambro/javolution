@@ -10,8 +10,7 @@ class Bio extends React.Component {
           display: 'flex',
           alignItems: 'center',
           marginBottom: rhythm(2),
-        }}
-      >
+        }}>
         <img
           src={profilePic}
           alt={`Arnaud Ambroselli`}

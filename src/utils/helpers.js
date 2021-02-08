@@ -6,9 +6,7 @@ export function formatReadingTime(minutes) {
       .fill('🍱')
       .join('')} ${minutes} minutes de lecture`;
   } else {
-    return `${new Array(cups || 1)
-      .fill('☕️')
-      .join('')} ${minutes} minutes de lecture`;
+    return `${new Array(cups || 1).fill('☕️').join('')} ${minutes} minutes de lecture`;
   }
 }
 
@@ -19,9 +17,6 @@ export function formatPostDate(date, lang) {
   }
 
   date = new Date(date);
-  const args = [
-    lang,
-    { day: 'numeric', month: 'long', year: 'numeric' },
-  ].filter(Boolean);
+  const args = [lang, { day: 'numeric', month: 'long', year: 'numeric' }].filter(Boolean);
   return date.toLocaleDateString(...args);
 }

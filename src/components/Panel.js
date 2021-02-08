@@ -11,8 +11,7 @@ function Panel({ children, style = {} }) {
         background: 'var(--inlineCode-bg)',
         wordBreak: 'keep-all',
         ...style,
-      }}
-    >
+      }}>
       {children}
     </p>
   );

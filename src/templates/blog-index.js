@@ -47,10 +47,7 @@ class BlogIndexTemplate extends React.Component {
       () => {
         if (typeof window === `undefined`) return;
         if (!window.localStorage) return;
-        window.localStorage.setItem(
-          STORAGE_KEY_TAGS,
-          JSON.stringify(this.state.tags)
-        );
+        window.localStorage.setItem(STORAGE_KEY_TAGS, JSON.stringify(this.state.tags));
       }
     );
   }
@@ -74,10 +71,7 @@ class BlogIndexTemplate extends React.Component {
               onClick={this.handleClick}
               key={tag}
               value={tag}
-              className={`tag${
-                this.state.tags.includes(tag) ? ' selected' : ''
-              }`}
-            >
+              className={`tag${this.state.tags.includes(tag) ? ' selected' : ''}`}>
               {tag}
             </button>
           ))}
@@ -106,13 +100,8 @@ class BlogIndexTemplate extends React.Component {
                         fontFamily: 'Montserrat, sans-serif',
                         fontSize: rhythm(1),
                         marginBottom: rhythm(1 / 4),
-                      }}
-                    >
-                      <Link
-                        style={{ boxShadow: 'none' }}
-                        to={node.fields.slug}
-                        rel="bookmark"
-                      >
+                      }}>
+                      <Link style={{ boxShadow: 'none' }} to={node.fields.slug} rel="bookmark">
                         {title}
                       </Link>
                     </h3>

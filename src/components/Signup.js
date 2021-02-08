@@ -66,8 +66,7 @@ class Signup extends React.Component {
         form = {
           id: JAVOLUTION_FORM_ID,
           title: 'Abonnez-vous',
-          subTitle:
-            'Abonnez-vous pour recevoir mes derniers articles par mail.',
+          subTitle: 'Abonnez-vous pour recevoir mes derniers articles par mail.',
           buttonText: 'Abonnez-vous',
           nameLabel: 'Votre nom',
           emailLabel: 'Votre email',
@@ -90,14 +89,12 @@ class Signup extends React.Component {
           boxShadow: 'var(--form-shadow)',
           backgroundColor: 'var(--bg)',
           borderRadius: '6px',
-        }}
-      >
+        }}>
         <div data-style="full">
           <div
             data-element="column"
             className="formkit-column"
-            style={{ backgroundColor: 'var(--bg-secondary)' }}
-          >
+            style={{ backgroundColor: 'var(--bg-secondary)' }}>
             <h1
               className="formkit-header"
               data-element="header"
@@ -105,15 +102,13 @@ class Signup extends React.Component {
                 color: 'var(--textTitle)',
                 fontSize: '20px',
                 fontWeight: 700,
-              }}
-            >
+              }}>
               {form.title}
             </h1>
             <div
               data-element="subheader"
               className="formkit-subheader"
-              style={{ color: 'var(--textNormal)' }}
-            >
+              style={{ color: 'var(--textNormal)' }}>
               <p>{form.subTitle}</p>
             </div>
             <div className="formkit-image">
@@ -122,8 +117,7 @@ class Signup extends React.Component {
                 width="46"
                 height="46"
                 viewBox="0 0 46 46"
-                style={{ maxWidth: '100%' }}
-              >
+                style={{ maxWidth: '100%' }}>
                 <g fill="none" fillRule="evenodd">
                   <path
                     fill="#DD92AB"
@@ -233,8 +227,7 @@ class Signup extends React.Component {
                   borderRadius: '24px',
                   color: 'white',
                   fontWeight: 700,
-                }}
-              >
+                }}>
                 <div className="formkit-spinner" />
                 <span>{form.buttonText}</span>
               </button>
@@ -246,8 +239,7 @@ class Signup extends React.Component {
                 color: 'var(--textNormal)',
                 fontSize: '13px',
                 fontWeight: 400,
-              }}
-            >
+              }}>
               <p>{form.noSpam['1']}</p>
               <p>{form.noSpam['2']}</p>
             </div>

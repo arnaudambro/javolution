@@ -11,8 +11,7 @@ class Confirm extends React.Component {
         <main>
           <h1>Presque fini...</h1>
           <p>
-            Merci pour votre abonnement. Vous devez regarder votre boîte mail
-            pour le confirmer.
+            Merci pour votre abonnement. Vous devez regarder votre boîte mail pour le confirmer.
           </p>
         </main>
       </Layout>
