@@ -16,6 +16,7 @@ import {
   loadFontsForCode,
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
+import FunnelPyramid from '../utils/funnels/funnel-pyramid';
 
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -25,13 +26,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    let {
-      previous,
-      next,
-      slug,
-      translations,
-      translatedLinks,
-    } = this.props.pageContext;
+    let { previous, next, slug, translations, translatedLinks } = this.props.pageContext;
     const lang = post.fields.langKey;
 
     // Replace original links with translated when available.
@@ -73,37 +68,33 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.spoiler}
           slug={post.fields.slug}
-          image={
-            post.frontmatter.cover ? post.frontmatter.cover.publicURL : null
-          }
+          image={post.frontmatter.cover ? post.frontmatter.cover.publicURL : null}
         />
         <main>
           <article>
             <header>
-              <h1 style={{ color: 'var(--textTitle)' }}>
-                {post.frontmatter.title}
-              </h1>
+              <h1 style={{ color: 'var(--textTitle)' }}>{post.frontmatter.title}</h1>
               <p
                 style={{
                   ...scale(-1 / 5),
                   display: 'block',
                   marginBottom: rhythm(1),
                   marginTop: rhythm(-4 / 5),
-                }}
-              >
+                }}>
                 {formatPostDate(post.frontmatter.date, lang)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
               </p>
             </header>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+            {html.split(':funnel:').map((content, i) => {
+              if (content === 'data') {
+                return <FunnelPyramid key={i} />;
+              }
+              return <div key={i} dangerouslySetInnerHTML={{ __html: content }} />;
+            })}
             <footer>
               {post.frontmatter.tags === 'JavaScript' && (
                 <p>
-                  <a
-                    href={discussUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={discussUrl} target="_blank" rel="noopener noreferrer">
                     Discuss on Twitter
                   </a>
                 </p>
@@ -116,24 +107,21 @@ class BlogPostTemplate extends React.Component {
             style={{
               margin: '90px 0 40px 0',
               fontFamily: systemFont,
-            }}
-          >
+            }}>
             <Signup cta={post.frontmatter.cta} />
           </div>
           <h3
             style={{
               fontFamily: 'Montserrat, sans-serif',
               marginTop: rhythm(0.25),
-            }}
-          >
+            }}>
             <Link
               style={{
                 boxShadow: 'none',
                 textDecoration: 'none',
                 color: 'var(--pink)',
               }}
-              to={'/'}
-            >
+              to={'/'}>
               Javolution
             </Link>
           </h3>
@@ -146,15 +134,10 @@ class BlogPostTemplate extends React.Component {
                 justifyContent: 'space-between',
                 listStyle: 'none',
                 padding: 0,
-              }}
-            >
+              }}>
               <li>
                 {previous && (
-                  <Link
-                    to={previous.fields.slug}
-                    rel="prev"
-                    style={{ marginRight: 20 }}
-                  >
+                  <Link to={previous.fields.slug} rel="prev" style={{ marginRight: 20 }}>
                     ← {previous.frontmatter.title}
                   </Link>
                 )}
