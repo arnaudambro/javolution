@@ -57,6 +57,14 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
                 content: metaDescription,
               },
               {
+                property: 'og:image:width',
+                content: '300',
+              },
+              {
+                property: 'og:image:height',
+                content: '300',
+              },
+              {
                 name: 'twitter:card',
                 content: 'summary',
               },
