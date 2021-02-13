@@ -57,6 +57,10 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
                 content: metaDescription,
               },
               {
+                property: 'og:type',
+                content: 'article',
+              },
+              {
                 property: 'og:image:width',
                 content: '300',
               },
@@ -87,6 +91,18 @@ function SEO({ meta, image, title, description, slug, lang = 'en' }) {
                       {
                         property: 'og:image',
                         content: metaImage,
+                      },
+                      {
+                        property: 'og:image:url',
+                        content: metaImage,
+                      },
+                      {
+                        property: 'og:image:alt',
+                        content: title,
+                      },
+                      {
+                        property: 'og:image:type',
+                        content: 'image/jpg',
                       },
                       {
                         name: 'twitter:image',
