@@ -9,7 +9,7 @@ tags: 'Révolution'
 
 J'ai participé à un concours de nouvelle, [lancé à Amsterdam par l'Air de dire](https://www.airdedire.nl/concours) et clôturé le 31 mars dernier, dont les contraintes étaient d'écrire entre 2500 et 3000 mots, et que l'histoire se déroule aux Pays-Bas.
 
-C'est assez différent d'écrire une nouvelle fictive ! L' article de blog relève plus du journalisme amateur, il demande plus de recherche, plus de rigueur dans l'information, là où la fiction permet beaucoup plus de liberté. J’ai bien aimé l’exercice, je vous le recommande.
+Écrire une nouvelle fictive est assez différent de l'article de blog : l’article relève plus du journalisme amateur, il demande plus de recherche, plus de rigueur dans l'information, là où la fiction permet beaucoup plus de liberté. J’ai bien aimé l’exercice, je vous le recommande !
 
 Tout commentaire, toute critique est la bienvenue !
 
