@@ -58,7 +58,7 @@ class BlogPostTemplate extends React.Component {
     const languageLink = createLanguageLink(slug, lang);
     const enSlug = languageLink('en');
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://Javolution.io${enSlug}`
+      `https://javolution.io${enSlug}`
     )}`;
 
     return (
