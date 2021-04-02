@@ -23,6 +23,11 @@ const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Droid Sans", "Helvetica Neue", sans-serif`;
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    console.log('BOOOOM', window.lumiere);
+    window.lumiere('sendEvent', 'test', 'pour voir');
+  }
+
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');

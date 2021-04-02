@@ -13,6 +13,24 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes} className="light">
           <script
+            async
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function (l, u, m, i, E, r, e, s) {
+                l[m] = function () {
+                  (l[m].q = l[m].q || []).push(arguments);
+                };
+                var c = u.createElement("script"),
+                  h = u.getElementsByTagName("head")[0];
+                c.type = "text/javascript";
+                c.async = true;
+                c.src = "https://lumiere.cleverapps.io/lib.js?a=" + i + "&n=" + E + "&e=" + r + "&d=" + e + "&b=" + s + "&t=" + Date.now();
+                h.appendChild(c);
+              })(window, document, "lumiere", "app_-5oCT7Y_lMJRl5DnPWXNT");
+                  `,
+            }}
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               (function() {
