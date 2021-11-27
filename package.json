@@ -39,6 +39,7 @@
     "react-dom": "^16.8.2",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "sortablejs": "^1.14.0",
     "typography": "^0.16.17",
     "typography-theme-wordpress-2016": "^0.15.10"
   },
@@ -81,5 +82,8 @@
   },
   "resolutions": {
     "**/sharp": "^0.23"
+  },
+  "engines": {
+    "node": "15"
   }
 }

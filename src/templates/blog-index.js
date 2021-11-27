@@ -17,6 +17,8 @@ const getInitTags = () => {
   if (typeof window === `undefined`) return tags;
   if (window === undefined) return tags;
   if (!window.localStorage) return tags;
+  if (tags.includes(window.location.hash.replace('#', '')))
+    return [window.location.hash.replace('#', '')];
   const savedTags = window.localStorage.getItem(STORAGE_KEY_TAGS);
   if (!savedTags) return tags;
   return savedTags;
@@ -48,6 +50,11 @@ class BlogIndexTemplate extends React.Component {
         if (typeof window === `undefined`) return;
         if (!window.localStorage) return;
         window.localStorage.setItem(STORAGE_KEY_TAGS, JSON.stringify(this.state.tags));
+        if (this.state.tags.length === 1) {
+          history.replaceState(null, null, `#${this.state.tags[0]}`);
+        } else {
+          history.replaceState(null, null, ' ');
+        }
       }
     );
   }

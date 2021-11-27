@@ -17,6 +17,7 @@ import {
   replaceAnchorLinksByLanguage,
 } from '../utils/i18n';
 import FunnelPyramid from '../utils/funnels/funnel-pyramid';
+import SortableGrid from '../components/SortableGrid/index';
 
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
@@ -24,7 +25,6 @@ const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
-    console.log('BOOOOM', window.lumiere);
     window.lumiere('sendEvent', 'test', 'pour voir');
   }
 
@@ -59,12 +59,8 @@ class BlogPostTemplate extends React.Component {
     });
 
     loadFontsForCode(lang);
-    // TODO: this curried function is annoying
-    const languageLink = createLanguageLink(slug, lang);
-    const enSlug = languageLink('en');
-    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://javolution.io${enSlug}`
-    )}`;
+
+    const discussUrl = 'https://twitter.com/arnaudambro';
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -90,9 +86,12 @@ class BlogPostTemplate extends React.Component {
                 {` • ${formatReadingTime(post.timeToRead)}`}
               </p>
             </header>
-            {html.split(':funnel:').map((content, i) => {
-              if (content === 'data') {
+            {html.split(/SPLITTERSORTABLEJS|FUNNEL/).map((content, i) => {
+              if (content === 'pyramid') {
                 return <FunnelPyramid key={i} />;
+              }
+              if (content === 'grid') {
+                return <SortableGrid key={i} />;
               }
               return <div key={i} dangerouslySetInnerHTML={{ __html: content }} />;
             })}
@@ -100,7 +99,7 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.tags === 'JavaScript' && (
                 <p>
                   <a href={discussUrl} target="_blank" rel="noopener noreferrer">
-                    Discuss on Twitter
+                    Discuss with me on Twitter
                   </a>
                 </p>
               )}
