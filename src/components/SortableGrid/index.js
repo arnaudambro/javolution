@@ -11,7 +11,9 @@ const SortableGrid = () => {
   const gridRef = useRef(null);
   const sortableJsRef = useRef(null);
 
-  const [data, setData] = useState(JSON.parse(sessionStorage.getItem('my-grid')) || initData);
+  const [data, setData] = useState(
+    typeof window !== 'undefined' ? JSON.parse(sessionStorage.getItem('my-grid')) : initData
+  );
 
   const onListChange = () => {
     const newData = [...gridRef.current.children]
