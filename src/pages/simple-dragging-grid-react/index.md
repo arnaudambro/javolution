@@ -15,7 +15,7 @@ For those who just want the final result, here is the code and a demo just below
 ### Code
 
 ```jsx
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Sortable from 'sortablejs';
 import './style.css';
 
@@ -112,7 +112,7 @@ I had to try it by myself !
 I wrote the React initial code : an array of items display in a grid layout.
 
 ```jsx
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Sortable from 'sortablejs';
 import './style.css';
 
