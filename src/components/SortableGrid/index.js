@@ -12,7 +12,9 @@ const SortableGrid = () => {
   const sortableJsRef = useRef(null);
 
   const [data, setData] = useState(
-    typeof window !== 'undefined' ? JSON.parse(sessionStorage.getItem('my-grid')) : initData
+    typeof window !== 'undefined'
+      ? JSON.parse(sessionStorage.getItem('my-grid')) || initData
+      : initData
   );
 
   const onListChange = () => {

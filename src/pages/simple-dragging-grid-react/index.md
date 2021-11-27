@@ -47,7 +47,7 @@ const SortableGrid = () => {
   }, []);
 
   return (
-    <div ref={gridRef} id="gridDemo">
+    <div ref={gridRef}>
       {data.map(({ _id, content }) => (
         <div key={_id} data-id={_id} className="grid-square">
           {content}
