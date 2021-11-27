@@ -62,7 +62,9 @@ export default SortableGrid;
 
 ### Demo
 
-Demo available [on my personal blog](https://www.javolution.io/simple-dragging-grid-react/#demo).
+SPLITTERSORTABLEJSgridSPLITTERSORTABLEJS
+
+Reload the page to see that it saved and worked !
 
 # So many DragNDrop libs out int the react ecosystem...
 
@@ -101,7 +103,7 @@ new Sortable(gridDemo, {
 ```
 
 I couldn't believe it... only those three lines of code and that's it ?
-And the [api](https://github.com/SortableJS/Sortable#options) looks straight forward too : the `onEnd` function seems doing the job I needed.
+And the [api](https://github.com/SortableJS/Sortable#options) looks straight forward too : the `onEnd` function seems doing the job I need.
 
 I had to try it by myself !
 
