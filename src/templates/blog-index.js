@@ -50,11 +50,6 @@ class BlogIndexTemplate extends React.Component {
         if (typeof window === `undefined`) return;
         if (!window.localStorage) return;
         window.localStorage.setItem(STORAGE_KEY_TAGS, JSON.stringify(this.state.tags));
-        if (this.state.tags.length === 1) {
-          history.replaceState(null, null, `#${this.state.tags[0]}`);
-        } else {
-          history.replaceState(null, null, ' ');
-        }
       }
     );
   }

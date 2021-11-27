@@ -62,9 +62,7 @@ export default SortableGrid;
 
 ### Demo
 
-SPLITTERSORTABLEJSgridSPLITTERSORTABLEJS
-
-Reload the page to see that it saved and worked !
+Demo available [on my personal blog](https://www.javolution.io/simple-dragging-grid-react/#demo).
 
 # So many DragNDrop libs out int the react ecosystem...
 
